@@ -1,0 +1,294 @@
+/* 
+   Developer: Paul Simon Salcedo;
+   Graphics Designer: Devin Bermudo;
+   Description: Pogi;
+
+ */
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Palette+Mosaic&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/hester-qiang-bSrqpoOz7Ec-unsplash.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+@media only screen and (min-width: 768px){
+    .column-1 {width: 8.33%;}
+    .column-2 {width: 16.66%;}
+    .column-3 {width: 25%;}
+    .column-4 {width: 33.33%;}
+    .column-5 {width: 41.66%;}
+    .column-6 {width: 50%;}
+    .column-7 {width: 58.33%;}
+    .column-8 {width: 66.66%;}
+    .column-9 {width: 75%;}
+    .column-10 {width: 83.33%;}
+    .column-11 {width: 91.66%;}
+    .column-12 {width: 100%;}
+}
+
+.container{
+	padding: 0px 50px 0px;
+}
+.h20{
+	height: 20px;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	opacity: 200;
+	background: #ffffff;
+	z-index: 1000;
+	box-shadow: 0 10px 20px -8px #009fff;
+}
+nav ul{
+	display: flex;
+	text-decoration: none;
+	list-style: none;
+}
+nav ul li a{
+	text-decoration: none;
+	padding: 15px;
+	font-size: 17px;	
+	color: #252525;
+	font-family: poppins;
+}
+nav .navigation{
+	display: flex;
+
+}
+.nav-after{
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,60,121,1) 0%, rgba(0,212,255,1) 100%);
+	height: 25px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 14.2%;
+}
+.nav-after p{
+	font-family: poppins;
+	color: #ffffff;
+	font-size: 13px;
+	padding-top: 3px;
+}
+.clearh20{
+	height: 20px;
+}
+.home-page{
+	height: 700px;
+	width: 100%;
+	background: url('images/banner3.png');
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: center;
+}
+
+.container .col-12{
+	align-items: center;
+	width: 100%;
+}
+.container .col-12 .title{
+	width: 300px;
+	margin: auto;
+	box-shadow: 0px 30px 26px -15px #585858;
+}
+.container .col-12 h1{
+	color: #E1E1E1;
+	font-size: 50px;
+	position: relative;
+	text-align: center;
+	border-bottom: 2px solid #C4C4C4;
+	font-family: 'Quicksand', sans-serif;
+}
+/********* About ********/
+.about-section{
+	height: 100vh;
+	background: white;
+	overflow: hidden;
+}
+.about-section .content-page{
+	display: flex;
+	position: relative;
+	justify-content: space-evenly;
+	top: 50px;
+}
+.about-section .content-page .col-6{
+	padding: 30px 50px 20px;
+	width: 400px;
+ 	position: relative;
+ 	top: 35px;
+ 	left: 40px;
+
+}
+.about-section .content-page .col-6 p{
+	font-size: 25px;
+	color: #444444;
+	font-style: italic;
+
+}
+.about-section .content-page .col-6 p span{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.about-section .content-page .col-6 h1{
+	font-size: 50px;
+	font-family: poppins;
+}
+
+.about-section .content-page .col-6 .ContactMe{
+	text-decoration: none;
+	padding: 10px 40px 10px;
+	border: 2px solid #FF5050;
+	position: relative;
+	top: 20px;
+	transition: .5s;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: #565656;
+}
+.about-section .content-page .col-6 .ContactMe:hover{
+	background: #FF5050;
+	transition: .5s;
+	color: white;
+}
+.about-section .content-page .Twojoints-mafia img{
+	max-width: 100%;
+	max-height: 500px;
+	align-items: center;
+	margin-top: 30px;
+}
+ /*****Arts*******/
+ .arts {
+ 	height: 1200px;
+ 	background: white;
+ }
+ .arts .Fst-image{
+ 	width: 250px;
+ 	position: relative;
+ 	top: 30px;
+ 	overflow: hidden;
+ 	height: 332px;
+ }
+ .arts .Fst-image img{
+ 	width: 100%;
+ 	height: auto;
+ 	transition: all 0.8s;
+ 	transform: scale(1);
+ 	z-index: 2;
+ 	background: linear-gradient(rgba(214, 54, 79, 0.63),rgba(214, 54, 79, 0.63));
+ }
+
+.arts .Fst-image .content{
+	width: 250px;
+	text-align: center;
+	background: #ffffff;
+	height: 160px;
+	z-index: 1;
+	transform: translateY(-20px);
+	transition: all 0.5s;
+	color: black;
+	opacity: 0;
+}
+.arts .Fst-image:hover{
+	box-shadow: 0 10px 20px -8px #009fff;
+}
+.arts .Fst-image:hover .content{
+	transform: translateY(-170px);
+	transition: all 0.5s;
+	color: #FFFFFF;
+	opacity: 1;
+	color: Black;
+
+}
+.arts .Fst-image:hover img{
+	transform: scale(1.5);
+	z-index: 2;
+	-webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
+  -moz-filter: bulr(5px); /* Mozila */
+}
+.wrapper{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	margin-left: 20px;
+}
+.arts .Fst-image .content h1{
+	font-family: 'poppins';
+	color: #F35353;
+	font-size: 25px;
+	line-height: normal;
+}
+.arts .Fst-image .content p{
+	font-size: 17px;
+	font-family: 'raleway',italic;
+	line-height: 1px;
+	position: relative;
+	top: -10px;
+}
+.arts .Fst-image .content a{
+	font-family: 'raleway',italic;
+	text-decoration: none;
+	color: #000000;
+	padding: 7px 35px 7px;
+	border: 1px solid #F35353;
+	transition: .5s;
+}
+.arts .Fst-image .content a:hover{
+	background: #F35353;
+	transition: .5s;
+	color: #ffffff;
+}
+
+/*********** TECH STACK ***********/
+.TechStack{
+	max-height: 150vh;
+	width: 100%;
+	background: white;
+}
+.banner-tech{
+	width: 100%;
+	padding-top: 30px;
+}
+.banner-tech img{
+	width: 100%;
+	max-height: 400px;
+}
+.TechStack .Welcome{
+	background: #f00;
+	padding: 40px 32px;
+	color: #fff;
+	border-top: 6px solid #990000;
+	font-family: lato-light;
+	width: 300px;
+	text-align: center;
+	margin: 0 50px;
+	position: relative;
+	bottom: 20px;
+}
+.TechStack .Welcome h1{
+	font-size: 50px;
+	line-height: 60%;
+	font-family: raleway;
+}
+.TechStack .Welcome p{
+	font-family: poppins;
+}
+.list-stack .SpecialRow .red_num{
+	padding: 20px 30px;
+	font-size: 40px;
+	background: red;
+	color: white;
+	border-radius: 80px;
+	
+}
