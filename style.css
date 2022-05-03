@@ -272,7 +272,7 @@ nav .navigation{
 	font-family: lato-light;
 	width: 300px;
 	text-align: center;
-	margin: 0 50px;
+	margin: 0 25px;
 	position: relative;
 	bottom: 20px;
 }
@@ -284,6 +284,13 @@ nav .navigation{
 .TechStack .Welcome p{
 	font-family: poppins;
 }
+
+.list-stack .SpecialRow{
+	text-align: center;
+	height: 100%;
+	padding: 80px 0;
+
+}
 .list-stack .SpecialRow .red_num{
 	padding: 20px 30px;
 	font-size: 40px;
@@ -291,4 +298,29 @@ nav .navigation{
 	color: white;
 	border-radius: 80px;
 	
+}
+.TechStack .list-stack .Content-Stack{
+	padding: 20px;
+}
+.TechStack .list-stack .row-img{
+	border-left: 15px solid red;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.TechStack .list-stack .row-img img{
+	max-width: 250px;
+	max-height: 200px;
+	height: 200px;
+	width: 180px;
+
+}
+/******FOOTER******/
+
+footer .andcopy{
+	text-align: center;
+	background: #404040;
+	height: 30px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 20px;
 }
