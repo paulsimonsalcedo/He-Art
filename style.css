@@ -310,9 +310,12 @@ nav .navigation{
 .TechStack .list-stack .row-img img{
 	max-width: 250px;
 	max-height: 200px;
-	height: 200px;
+	height: 150px;
 	width: 180px;
 
+}
+.TechStack .list-stack #height20{
+	height: 98px;
 }
 /******FOOTER******/
 
