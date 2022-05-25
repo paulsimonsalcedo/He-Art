@@ -1,7 +1,7 @@
 /* 
    Developer: Paul Simon Salcedo;
-   Graphics Designer: Devin Bermudo;
-   Description: Pogi;
+   Graphics Designer: Devin Jozzef Bermudo;
+   Description: Art blog of He-art;
 
  */
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
@@ -55,6 +55,7 @@ nav ul{
 	text-decoration: none;
 	list-style: none;
 }
+
 nav ul li a{
 	text-decoration: none;
 	padding: 15px;
@@ -62,10 +63,11 @@ nav ul li a{
 	color: #252525;
 	font-family: poppins;
 }
+
 nav .navigation{
 	display: flex;
-
 }
+
 .nav-after{
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,60,121,1) 0%, rgba(0,212,255,1) 100%);
 	height: 25px;
@@ -74,15 +76,18 @@ nav .navigation{
 	position: relative;
 	top: 14.2%;
 }
+
 .nav-after p{
 	font-family: poppins;
 	color: #ffffff;
 	font-size: 13px;
 	padding-top: 3px;
 }
+
 .clearh20{
 	height: 20px;
 }
+
 .home-page{
 	height: 700px;
 	width: 100%;
@@ -101,6 +106,7 @@ nav .navigation{
 	margin: auto;
 	box-shadow: 0px 30px 26px -15px #585858;
 }
+
 .container .col-12 h1{
 	color: #E1E1E1;
 	font-size: 50px;
@@ -109,32 +115,35 @@ nav .navigation{
 	border-bottom: 2px solid #C4C4C4;
 	font-family: 'Quicksand', sans-serif;
 }
+
 /********* About ********/
 .about-section{
 	height: 100vh;
 	background: white;
 	overflow: hidden;
 }
+
 .about-section .content-page{
 	display: flex;
 	position: relative;
 	justify-content: space-evenly;
 	top: 50px;
 }
+
 .about-section .content-page .col-6{
 	padding: 30px 50px 20px;
 	width: 400px;
  	position: relative;
  	top: 35px;
  	left: 40px;
-
 }
+
 .about-section .content-page .col-6 p{
 	font-size: 25px;
 	color: #444444;
 	font-style: italic;
-
 }
+
 .about-section .content-page .col-6 p span{
 	text-decoration: underline;
 	cursor: pointer;
@@ -168,10 +177,25 @@ nav .navigation{
 	margin-top: 30px;
 }
  /*****Arts*******/
+ .btn{
+ 	font-size: 0.9rem;
+ 	text-decoration: none;
+ 	color: #ffffff;
+ 	background-color: #009fff;
+ 	padding: 5px;
+ 	border-radius: 3px;
+ 	margin-right: 1rem;
+ }
+
+.active{
+	background-color: #F68630;
+}
+
  .arts {
  	height: 1200px;
  	background: white;
  }
+
  .arts .Fst-image{
  	width: 250px;
  	position: relative;
@@ -179,6 +203,7 @@ nav .navigation{
  	overflow: hidden;
  	height: 332px;
  }
+
  .arts .Fst-image img{
  	width: 100%;
  	height: auto;
@@ -202,14 +227,15 @@ nav .navigation{
 .arts .Fst-image:hover{
 	box-shadow: 0 10px 20px -8px #009fff;
 }
+
 .arts .Fst-image:hover .content{
 	transform: translateY(-170px);
 	transition: all 0.5s;
 	color: #FFFFFF;
 	opacity: 1;
 	color: Black;
-
 }
+
 .arts .Fst-image:hover img{
 	transform: scale(1.5);
 	z-index: 2;
@@ -217,18 +243,21 @@ nav .navigation{
   filter: blur(5px);
   -moz-filter: bulr(5px); /* Mozila */
 }
+
 .wrapper{
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
 	margin-left: 20px;
 }
+
 .arts .Fst-image .content h1{
 	font-family: 'poppins';
 	color: #F35353;
 	font-size: 25px;
 	line-height: normal;
 }
+
 .arts .Fst-image .content p{
 	font-size: 17px;
 	font-family: 'raleway',italic;
@@ -236,6 +265,7 @@ nav .navigation{
 	position: relative;
 	top: -10px;
 }
+
 .arts .Fst-image .content a{
 	font-family: 'raleway',italic;
 	text-decoration: none;
@@ -244,6 +274,7 @@ nav .navigation{
 	border: 1px solid #F35353;
 	transition: .5s;
 }
+
 .arts .Fst-image .content a:hover{
 	background: #F35353;
 	transition: .5s;
@@ -256,14 +287,17 @@ nav .navigation{
 	width: 100%;
 	background: white;
 }
+
 .banner-tech{
 	width: 100%;
 	padding-top: 30px;
 }
+
 .banner-tech img{
 	width: 100%;
 	max-height: 400px;
 }
+
 .TechStack .Welcome{
 	background: #f00;
 	padding: 40px 32px;
@@ -276,11 +310,13 @@ nav .navigation{
 	position: relative;
 	bottom: 20px;
 }
+
 .TechStack .Welcome h1{
 	font-size: 50px;
 	line-height: 60%;
 	font-family: raleway;
 }
+
 .TechStack .Welcome p{
 	font-family: poppins;
 }
@@ -291,32 +327,33 @@ nav .navigation{
 	padding: 80px 0;
 
 }
+
 .list-stack .SpecialRow .red_num{
 	padding: 20px 30px;
 	font-size: 40px;
 	background: red;
 	color: white;
 	border-radius: 80px;
-	
 }
+
 .TechStack .list-stack .Content-Stack{
 	padding: 20px;
 }
+
 .TechStack .list-stack .row-img{
 	border-left: 15px solid red;
 	overflow: hidden;
 	margin-top: 20px;
 }
+
 .TechStack .list-stack .row-img img{
 	max-width: 250px;
 	max-height: 156px;
 	height: 155px;
 	width: 180px;
-
 }
 
 /******FOOTER******/
-
 footer .andcopy{
 	text-align: center;
 	background: #404040;
