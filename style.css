@@ -135,7 +135,15 @@ nav .navigation{
 	width: 400px;
  	position: relative;
  	top: 35px;
- 	left: 40px;
+ 	opacity: 0;
+ 	left: -130px;
+ 	transition: 2s;
+}
+.about-section .content-page .col-6.active2{
+		opacity: 1;
+		transition: 2s;
+		left: 140px;
+
 }
 
 .about-section .content-page .col-6 p{
@@ -169,6 +177,16 @@ nav .navigation{
 	background: #FF5050;
 	transition: .5s;
 	color: white;
+}
+.Twojoints-mafia{
+	position: relative;
+	right: -300px;
+	opacity: 0;
+}
+.Twojoints-mafia.active3{
+	position: relative;
+	right: -10px;
+	opacity: 1;
 }
 .about-section .content-page .Twojoints-mafia img{
 	max-width: 100%;
@@ -283,7 +301,7 @@ nav .navigation{
 
 /*********** TECH STACK ***********/
 .TechStack{
-	max-height: 150vh;
+	min-height: 180vh;
 	width: 100%;
 	background: white;
 }
@@ -362,3 +380,26 @@ footer .andcopy{
 	font-family: 'Open Sans', sans-serif;
 	padding-top: 20px;
 }
+.back-to-top{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	opacity: 0;
+	z-index: 1000;
+	transition: .5s;
+	background: red;
+	padding: 10px;
+	border-radius: 10px;
+
+}
+#back_to_top.active{
+	opacity: 1;
+	transition: .5s;
+}
+
+.back-to-top i{
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	
+	}
