@@ -39,6 +39,37 @@ body{
 .h20{
 	height: 20px;
 }
+.introduction{
+	position: fixed;
+	z-index: 2000;
+	width: 100%;
+	height: 100vh;
+	background: #161616;
+	transition: 1s;
+}
+.introduction h1{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-family: 'poppins', sans-serif;
+}
+.introduction .intro{
+	position: relative;
+	display: inline-block;
+	bottom: -20px;
+	opacity: 0;
+}
+.introduction .intro.actives{
+	bottom: 0;
+	transition: ease-in-out 0.5s;
+	opacity: 20;
+}
+.introduction .intro.fade{
+	bottom: 150px;
+	transition: ease-in-out 0.5s;
+}
 nav{
 	display: flex;
 	justify-content: space-between;

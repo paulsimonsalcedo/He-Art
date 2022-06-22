@@ -1,3 +1,19 @@
+//introduction no ready function'
+
+let introduction = document.querySelector(".introduction");
+let introspan = document.querySelector(".intro");
+let header = document.querySelector(".logo-header");
+window.addEventListener("DOMContentLoaded", ()=>{
+	setTimeout(()=>{
+
+		introspan.forEach((span, idx) =>{
+			setTimeout(()=>{
+				span.classList.add("actives");
+			},(idx + 1)*400);
+		});
+	});
+});
+
 window.addEventListener("scroll", function(){
 
 
@@ -20,3 +36,4 @@ function content2(){
 	active3.classList.toggle("active3", window.scrollY> 500);
 	active3.style.transition = "2s";
 }
+//
