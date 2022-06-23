@@ -468,12 +468,11 @@ input[type="checkbox"]{
   border-radius: 20px;
   overflow: hidden;
   transition: ease-in 0.5s;
+  left: 10px;
+  top: 3px;
 }
 
-input[type="checkbox"]:checked ~ .check{
-  background: #fff;
-  box-shadow: 0 0 0 1200px #161616;
-}
+
 
 .check:before{
   content: '';

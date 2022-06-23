@@ -49,3 +49,17 @@ window.addEventListener('load', ()=>{ //when browser reloaded function
 	})
 
 })
+
+let check = document.querySelector('.check');
+let bgChange = document.querySelector('.nav-toggle');
+check.addEventListener("click", function(){
+
+	this.classList.toggle("navActive");
+	bgChange.style.background = "#161616";
+
+	check.addEventListener("click", function(){
+		this.classList.remove("navActive");
+	bgChange.style.background = "#161616";
+	});
+	
+})
