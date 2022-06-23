@@ -39,35 +39,48 @@ body{
 .h20{
 	height: 20px;
 }
-.introduction{
+.navbar-brand{
+	font-family: 'poppins';
+	text-decoration: none;
+	font-size: 40px;
+	color: #252525;
+	position: relative;
+}
+.intro{
 	position: fixed;
 	z-index: 2000;
+	left: 0;
+	top: 0;
 	width: 100%;
 	height: 100vh;
-	background: #161616;
+	background-color: #161616;
 	transition: 1s;
 }
-.introduction h1{
+.intro .logo-header{
 	position: absolute;
+	top: 40%;
 	left: 50%;
-	top: 50%;
 	transform: translate(-50%,-50%);
-	color: #fff;
-	font-family: 'poppins', sans-serif;
+	color: #ffffff;
 }
-.introduction .intro{
+.intro .logo-header .logo{
 	position: relative;
 	display: inline-block;
 	bottom: -20px;
+	background-color: #161616;
 	opacity: 0;
+	font-size: 40px;
+	font-family: 'poppins';
 }
-.introduction .intro.actives{
+.intro .logo-header .logo.active{
 	bottom: 0;
+	opacity: 1;
 	transition: ease-in-out 0.5s;
-	opacity: 20;
+
 }
-.introduction .intro.fade{
+.intro .logo-header .logo.fade{
 	bottom: 150px;
+	opacity: 0;
 	transition: ease-in-out 0.5s;
 }
 nav{

@@ -1,19 +1,4 @@
-//introduction no ready function'
-
-let introduction = document.querySelector(".introduction");
-let introspan = document.querySelector(".intro");
-let header = document.querySelector(".logo-header");
-window.addEventListener("DOMContentLoaded", ()=>{
-	setTimeout(()=>{
-
-		introspan.forEach((span, idx) =>{
-			setTimeout(()=>{
-				span.classList.add("actives");
-			},(idx + 1)*400);
-		});
-	});
-});
-
+//introduction no ready function
 window.addEventListener("scroll", function(){
 
 
@@ -36,4 +21,31 @@ function content2(){
 	active3.classList.toggle("active3", window.scrollY> 500);
 	active3.style.transition = "2s";
 }
-//
+
+let intro = document.querySelector(".intro");
+let logo = document.querySelector(".logo-header");
+let logoSpan = document.querySelectorAll(".logo");
+
+window.addEventListener('load', ()=>{ //when browser reloaded function
+	setTimeout(()=>{
+			logoSpan.forEach((span, idx)=>{ // each span animation transition in
+				setTimeout(()=>{
+					span.classList.add('active');
+				}, (idx + 1) * 400)
+			})
+			setTimeout(() => {
+				logoSpan.forEach((span, idx)=>{ // each span animation transition out
+					setTimeout(()=>{
+						span.classList.remove('active');
+						span.classList.add('fade');
+
+					}, (idx + 1) *100);
+				})
+			},2000);
+
+			setTimeout(() => { // black background transition out
+				intro.style.top = '-100vh';
+			}, 2300);
+	})
+
+})
