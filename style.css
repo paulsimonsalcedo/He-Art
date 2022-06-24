@@ -506,3 +506,25 @@ input[type="checkbox"]:checked ~ .check:before{
 input[type="checkbox"]:checked ~ .check:after{
   transform: translateX(0px);
 }
+.nav-toggle.navActive{
+	background-color: #484848;
+	transition: ease-in-out 0.5s;
+
+}
+.nav-toggle.navActive .navbar-brand,
+.nav-toggle.navActive .nav-link{
+	color: #EDEDED;
+}
+.nav-toggle{
+	transition: ease-in-out 0.5s;
+}
+@media(max-width: 1309px){
+	.TechStack{
+		min-height: 200vh;
+	}
+}
+@media(max-width: 1209px){
+	.TechStack{
+		min-height: 220vh;
+	}
+}

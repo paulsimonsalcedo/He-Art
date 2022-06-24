@@ -1,4 +1,6 @@
 //introduction no ready function
+// made by Paul Salcedo
+//Description Always Handsome
 window.addEventListener("scroll", function(){
 
 
@@ -50,16 +52,12 @@ window.addEventListener('load', ()=>{ //when browser reloaded function
 
 })
 
-let check = document.querySelector('.check');
-let bgChange = document.querySelector('.nav-toggle');
-check.addEventListener("click", function(){
-
-	this.classList.toggle("navActive");
-	bgChange.style.background = "#161616";
-
-	check.addEventListener("click", function(){
-		this.classList.remove("navActive");
-	bgChange.style.background = "#161616";
-	});
-	
-})
+function isChecked(){
+	if(document.querySelector(".check-box").checked==true){
+		document.querySelector(".nav-toggle").classList.toggle("navActive");
+		document.querySelector(".check").style.background = "#fff";
+	}else{
+		document.querySelector(".nav-toggle").classList.remove("navActive");
+		document.querySelector(".check").style.background = "#000";
+	}
+}
